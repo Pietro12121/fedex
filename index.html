@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FedEx Delivery Official</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 1rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 3rem 2rem;
+      background-color: #fff;
+      text-align: center;
+    }
+    .hero input {
+      padding: 0.8rem;
+      width: 300px;
+      margin-top: 1rem;
+    }
+    .hero button {
+      padding: 0.8rem 1.5rem;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .services {
+      padding: 2rem;
+      background-color: #f6f6f6;
+    }
+    .services h2 {
+      color: #ff6600;
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      padding: 2rem;
+      text-align: left;
+    }
+    .footer a {
+      color: #ff6600;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .footer h4 {
+      margin-top: 1.5rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>FedEx Official ✈️</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html">Track</a>
+      <a href="ship.html">Ship</a>
+      <a href="help.html">Help</a>
+      <a href="thanks.html">Thanks</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to FedEx Official Delivery Services</h1>
+<br><br>
+
+ <p>Track your packages, ship faster, and get personalized shipping solutions.</p>
+
+<input type="text" placeholder="Enter your tracking number" id="trackInput" />
+<button onclick="validateTracking()">Track</button>
+
+<script>
+  function validateTracking() {
+    const validTrackingNumber = "FXUP83XHYE83K9N37JDO58UR49";
+    const input = document.getElementById("trackInput").value.trim();
+
+    if (input === validTrackingNumber) {
+      window.location.href = "track.html";
+    } else {
+      alert("Invalid tracking number. Please check and try again.");
+    }
+  }
+</script>
+
+
+</a><br>
+
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px; background: #f9f9f9;">
+
+  <!-- Image 1 -->
+  <div style="width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+    <img src="image1.jpg" alt="Shipping" style="width:100%;">
+    <div style="padding: 15px;">
+      <h3 style="color: #ff6600;">Preparing Shipment</h3>
+      <p>Package ready for pickup at FedEx facility.</p>
+    </div>
+  </div>
+
+  <!-- Image 2 -->
+  <div style="width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+    <img src="image2.jpg" alt="Tracking" style="width:100%;">
+    <div style="padding: 15px;">
+      <h3 style="color: #ff6600;">In Transit</h3>
+      <p>Your package is moving through the FedEx network.</p>
+    </div>
+  </div>
+
+  <!-- Image 3 -->
+  <div style="width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+    <img src="image3.jpg" alt="Delivery Options" style="width:100%;">
+    <div style="padding: 15px;">
+      <h3 style="color: #ff6600;">Out for Delivery</h3>
+      <p>The courier is on the way to your address.</p>
+    </div>
+  </div>
+
+  <!-- Image 4 -->
+  <div style="width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+    <img src="image4.jpg" alt="Returns" style="width:100%;">
+    <div style="padding: 15px;">
+      <h3 style="color: #ff6600;">Successful Delivery</h3>
+      <p>Package delivered to recipient on time.</p>
+    </div>
+  </div>
+
+  <!-- Image 5 -->
+  <div style="width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+    <img src="image5.jpg" alt="Supplies" style="width:100%;">
+    <div style="padding: 15px;">
+      <h3 style="color: #ff6600;">At Local Facility</h3>
+      <p>Your item has arrived at the delivery station.</p>
+    </div>
+  </div>
+
+  <!-- Image 6 -->
+  <div style="width: 300px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+    <img src="image6.jpg" alt="Pickup" style="width:100%;">
+    <div style="padding: 15px;">
+      <h3 style="color: #ff6600;">Pickup Completed</h3>
+      <p>FedEx has collected the package from sender.</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div style="max-width: 720px; margin: 60px auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6;">
+  <h2 style="color: #ff6600; font-size: 32px; font-weight: 700; margin-bottom: 10px; text-align: center;">
+    Why ship with FedEx?
+  </h2>
+  <p style="font-weight: 500; font-size: 20px; color: #555; margin: 0 0 30px 0; text-align: center;">
+    Innovative solutions for reliability &amp; speed
+  </p>
+
+  <p style="font-size: 17px; margin-bottom: 28px;">
+    Whether it's across states or worldwide, we prioritize the secure and swift arrival of your shipments.
+  </p>
+
+  <h3 style="font-size: 22px; margin-bottom: 12px; color: #222; font-weight: 600;">
+    Premium shipping at professional rates
+  </h3>
+  <p style="font-size: 17px; margin-bottom: 28px;">
+    When you need reliable delivery and careful handling, trust FedEx to get your items where they need to go on time.
+  </p>
+
+  <h3 style="font-size: 22px; margin-bottom: 12px; color: #222; font-weight: 600;">
+    We ship everywhere*
+  </h3>
+  <p style="font-size: 17px; margin-bottom: 28px;">
+    From major cities to remote locations, your goods can reach worldwide.
+  </p>
+
+  <h3 style="font-size: 22px; margin-bottom: 12px; color: #222; font-weight: 600;">
+    FedEx can ship for less than the Post Office
+  </h3>
+  <p style="font-size: 17px; margin-bottom: 12px;">
+    Two-day retail shipping, one flat rate. FedEx One Rate®**
+  </p>
+
+  <p style="font-size: 14px; color: #777; margin-bottom: 40px;">
+    *FedEx doesn't ship anywhere sanctioned by the U.S.<br>
+    **Exclusions apply. Visit the One Rate page to learn more.
+  </p>
+
+  <div style="text-align: center;">
+    <a href="ship.html" style="
+      background-color: #ff6600;
+      color: white;
+      padding: 20px 60px;
+      font-size: 22px;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(255, 102, 0, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+      user-select: none;
+    "
+    onmouseover="this.style.backgroundColor='#e65500'; this.style.boxShadow='0 6px 12px rgba(230, 85, 0, 0.6)';"
+    onmouseout="this.style.backgroundColor='#ff6600'; this.style.boxShadow='0 4px 8px rgba(255, 102, 0, 0.4)';">
+      Start shipping now
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>International Shipping</li>
+      <li>Domestic Courier</li>
+      <li>Real-Time Tracking</li>
+      <li>Account Management</li>
+    </ul>
+  </div>
+
+  <div class="services">
+    <h2>Why Choose Us?</h2>
+    <p>
+      We provide fast and reliable delivery services around the world. With FedExClone,
+      your goods are in safe hands. Open an account today to access more services and
+      personalized delivery solutions.
+    </p>
+  </div>
+
+  <div class="footer">
+    <h4>FedEx rate and surcharge changes</h4>
+    <a href="https://www.fedex.com/en-us/shipping/rate-changes.html">Learn more about rate and surcharge changes</a>
+    <h4>FedEx money-back guarantee</h4>
+    <p>
+      We offer a money-back guarantee for select services. This guarantee may be suspended, modified, or revoked.
+      Please check <a href="https://www.fedex.com/en-us/service-guide/money-back-guarantee.html">money-back guarantee</a>
+      for the latest status of our money-back guarantee.
+    </p>
+    <p>*For details, please see <a href="https://www.fedex.com/en-us/rewards.html">FedEx Rewards Terms and Conditions</a>.</p>
+
+    <h4>Our Company</h4>
+    <a href="https://www.fedex.com/en-us/about.html">About FedEx</a>
+    <a href="https://www.fedex.com/en-us/about/company-structure.html">Our Portfolio</a>
+    <a href="https://investors.fedex.com/home/default.aspx">Investor Relations</a>
+    <a href="https://careers.fedex.com/fedex/">Careers</a>
+    <a href="https://www.fedex.com/en-us/blog.html">FedEx Blog</a>
+    <a href="https://www.fedex.com/en-us/about/corporate-social-responsibility.html">Corporate Responsibility</a>
+    <a href="https://newsroom.fedex.com/">Newsroom</a>
+    <a href="https://www.fedex.com/en-us/customer-support.html">Contact Us</a>
+
+    <h4>More From FedEx</h4>
+    <a href="https://www.fedex.com/en-us/compatible.html">FedEx Compatible</a>
+    <a href="https://developer.fedex.com/api/en-us/home.html">FedEx Developer Portal</a>
+    <a href="https://www.fedex.com/en-us/logistics.html">FedEx Logistics</a>
+    <a href="https://www.fedex.com/en-us/shoprunner.html">ShopRunner</a>
+
+    <h4>Language</h4>
+    <a href="https://www.fedex.com/?location=home">United States United States</a>
+    <p>English</p>
+    <p>Follow FedEx</p>
+  </div>
+
+  <form onsubmit="event.preventDefault(); window.location.href='track.html?tn=' + document.getElementById('trackingInput').value;">
+  <input type="text" id="trackingInput" placeholder="Enter tracking number">
+  <button type="submit">Track</button>
+</form>
+</body>
+</html>
+

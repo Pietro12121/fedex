@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Package Tracking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #f37021;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .track-line {
+      position: relative;
+      margin: 2rem auto 3rem auto;
+      width: 95%;
+      height: 6px;
+      background: #ddd;
+      border-radius: 50px;
+    }
+
+    .track-line::before {
+      content: '';
+      position: absolute;
+      height: 6px;
+      background: linear-gradient(90deg, #f37021, #ffc107);
+      border-radius: 50px;
+      width: 60%; /* Adjust progress length here */
+    }
+
+    .track-icons {
+      position: absolute;
+      top: -25px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.5rem;
+      flex-wrap: nowrap;
+    }
+
+    .track-icons span {
+      background: white;
+      padding: 1px 3px;
+      border-radius: 6px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      white-space: nowrap;
+    }
+
+    .package-section {
+      text-align: center;
+      margin: 2rem 1rem;
+      position: relative;
+    }
+
+    .package-section img {
+      max-width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(243, 112, 33, 0.3);
+    }
+
+    .stamp {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .payment-status {
+      margin: 1rem auto;
+      max-width: 400px;
+      background: #fff3cd;
+      color: #856404;
+      border: 2px solid #ffeeba;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+    }
+
+    .testimonials {
+      overflow: hidden;
+      white-space: nowrap;
+      background: #f37021;
+      color: white;
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    .testimonial-scroll {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 25s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    footer {
+      background: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 0.8rem;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Tracking Status</header>
+
+  <div class="track-line">
+    <div class="track-icons">
+      <span>📥 Picked by FedEx</span>
+      <span>🔍 Scanning Goods</span>
+      <span>🚢 Shipped</span>
+      <span>📦 China</span>
+      <span>🛰️ En Route</span>
+      <span>🏢 Pick Up Station</span>
+      <span>🏠 Delivery</span>
+    </div>
+  </div>
+
+  <div class="package-section">
+    <img src="image8.jpg" alt="Package" />
+    <div class="stamp">✔ Verified</div>
+  </div><br>
+
+
+<div style="max-width: 600px; margin: 2rem auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-family: Arial, sans-serif;">
+  <h3 style="text-align: center; color: #f37021; margin-bottom: 1rem;">📦 Delivery Details</h3>
+  <p><strong>Delivery Station Company:</strong> FedEx Distribution Center, Memphis, TN</p>
+  <p><strong>Full Name:</strong> Jonathan Smith</p>
+  <p><strong>Recipient Name:</strong> Emily Johnson</p>
+  <p><strong>Sender Name:</strong> Michael Anderson</p>
+  <p><strong>Destination Country:</strong> United States</p>
+  <p><strong>Pickup Station:</strong> FedEx Ground Hub, Los Angeles, CA</p>
+  <p><strong>Recipient ZIP Code:</strong> 90210</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="payment-status">
+    Part Payment Required at Delivery Station
+  </div>
+
+  <div class="testimonials">
+    <div class="testimonial-scroll">
+      “Delivered faster than I thought!” – Musa &nbsp;&nbsp;&nbsp;
+      “I was able to track easily!” – Sandra &nbsp;&nbsp;&nbsp;
+      “Great support team!” – Lucas &nbsp;&nbsp;&nbsp;
+      “Perfect service. Thanks!” – Ngozi &nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+
+  <div style="background-color: #1c1c1c; color: #fff; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7;">
+  <h4 style="color: #f37021;">FedEx rate and surcharge changes</h4>
+  <a href="https://www.fedex.com/en-us/shipping/rate-changes.html" style="color: #aaa; text-decoration: underline;">Learn more about rate and surcharge changes</a>
+
+  <h4 style="color: #f37021; margin-top: 20px;">FedEx money-back guarantee</h4>
+  <p style="color: #ccc;">
+    We offer a money-back guarantee for select services. This guarantee may be suspended, modified, or revoked.
+    Please check <a href="https://www.fedex.com/en-us/service-guide/money-back-guarantee.html" style="color: #aaa; text-decoration: underline;">money-back guarantee</a>
+    for the latest status of our money-back guarantee.
+  </p>
+  <p style="color: #ccc;">*For details, please see <a href="https://www.fedex.com/en-us/rewards.html" style="color: #aaa; text-decoration: underline;">FedEx Rewards Terms and Conditions</a>.</p>
+
+  <h4 style="color: #f37021; margin-top: 20px;">Our Company</h4>
+  <a href="https://www.fedex.com/en-us/about.html" style="color: #aaa; display: block;">About FedEx</a>
+  <a href="https://www.fedex.com/en-us/about/company-structure.html" style="color: #aaa; display: block;">Our Portfolio</a>
+  <a href="https://investors.fedex.com/home/default.aspx" style="color: #aaa; display: block;">Investor Relations</a>
+  <a href="https://careers.fedex.com/fedex/" style="color: #aaa; display: block;">Careers</a>
+  <a href="https://www.fedex.com/en-us/blog.html" style="color: #aaa; display: block;">FedEx Blog</a>
+  <a href="https://www.fedex.com/en-us/about/corporate-social-responsibility.html" style="color: #aaa; display: block;">Corporate Responsibility</a>
+  <a href="https://newsroom.fedex.com/" style="color: #aaa; display: block;">Newsroom</a>
+  <a href="https://www.fedex.com/en-us/customer-support.html" style="color: #aaa; display: block;">Contact Us</a>
+
+  <h4 style="color: #f37021; margin-top: 20px;">More From FedEx</h4>
+  <a href="https://www.fedex.com/en-us/compatible.html" style="color: #aaa; display: block;">FedEx Compatible</a>
+  <a href="https://developer.fedex.com/api/en-us/home.html" style="color: #aaa; display: block;">FedEx Developer Portal</a>
+  <a href="https://www.fedex.com/en-us/logistics.html" style="color: #aaa; display: block;">FedEx Logistics</a>
+  <a href="https://www.fedex.com/en-us/shoprunner.html" style="color: #aaa; display: block;">ShopRunner</a>
+
+  <h4 style="color: #f37021; margin-top: 20px;">Language</h4>
+  <a href="https://www.fedex.com/?location=home" style="color: #aaa;">United States</a>
+  <p style="color: #ccc;">English</p>
+  <p style="color: #ccc;">Follow FedEx</p>
+</div>
+</body>
+</html>
